@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azuthe | Carrito de compras</title>
-    <link rel="stylesheet" href="CSS/mujer.css">
+    <link rel="stylesheet" href="CSS/carrito.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,6 +20,11 @@
             </ul>
         </nav>
     </header>
+    <div class="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total a pagar: $<span id="total-pagar"></span></p>
+    </div>
     <footer>
         <ul>
             <li><a href="qsomos.html">¿Quiénes somos?</a> </li>
@@ -33,5 +38,65 @@
             </div>
         <p>© 2023 Azuthe. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function obtenerCarrito() {
+                return JSON.parse(localStorage.getItem('carrito')) || [];
+            }
+
+            function guardarCarrito(carrito) {
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+            }
+
+            function mostrarProductosEnCarrito() {
+                var carrito = obtenerCarrito();
+                var listaCarrito = document.getElementById('lista-carrito');
+                var totalPagarElemento = document.getElementById('total-pagar');
+
+                var totalPagar = 0;
+
+                carrito.forEach(function (producto, index) {
+                    var li = document.createElement('li');
+
+                    var img = document.createElement('img');
+                    img.src = producto.imagen;
+                    img.alt = producto.nombre;
+                    img.style.width = '200px';
+                    li.appendChild(img);
+
+                    var texto = document.createElement('span');
+                    texto.textContent = `${producto.nombre} - $${producto.precio.toFixed(2)}`;
+                    li.appendChild(texto);
+
+                    var botonEliminar = document.createElement('button');
+                    botonEliminar.textContent = 'Eliminar';
+                    botonEliminar.addEventListener('click', function () {
+                        eliminarProductoDelCarrito(index);
+                    });
+                    li.appendChild(botonEliminar);
+
+                    listaCarrito.appendChild(li);
+
+                    totalPagar += producto.precio;
+                });
+
+                totalPagarElemento.textContent = totalPagar.toFixed(2);
+            }
+
+            function eliminarProductoDelCarrito(index) {
+                var carrito = obtenerCarrito();
+                carrito.splice(index, 1);
+                guardarCarrito(carrito);
+                actualizarPaginaCarrito();
+            }
+
+            function actualizarPaginaCarrito() {
+                window.location.href = 'carrito.html';
+            }
+
+            mostrarProductosEnCarrito();
+        });
+    </script>
+    
 </body>
 </html>
