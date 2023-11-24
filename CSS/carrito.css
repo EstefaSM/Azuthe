@@ -63,19 +63,54 @@ nav a {
     color: black;
 }
 
+/* Aquí empieza la sección del carrito */
 
+.carrito {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #d1e9a3;
+    padding: 40px;
+}
 
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 20px;
+    list-style: none;
+}
 
+.carrito li {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+}
 
+.carrito img {
+    margin: 10px;
+    border-radius: 20px;
+}
 
+.carrito p {
+    line-height: 25px;
+}
 
+.total {
+    font-weight: bold;
+    background-color: #8fa06e;
+    padding: 10px;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
 
-
-
-
-
-
-
+.carrito button:hover{
+    background-color: #8fa06e
+}
 
 /* Aquí empieza el Footer */
 

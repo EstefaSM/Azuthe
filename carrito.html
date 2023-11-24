@@ -22,8 +22,8 @@
     </header>
     <div class="carrito">
         <h2>Carrito de compras</h2>
-        <ul id="lista-carrito"></ul>
-        <p>Total a pagar: $<span id="total-pagar"></span></p>
+        <ul id="lista-carrito" class="lista" ></ul>
+        <p class="total" >Total a pagar: $<span id="total-pagar"></span></p>
     </div>
     <footer>
         <ul>
@@ -69,7 +69,7 @@
                     li.appendChild(texto);
 
                     var botonEliminar = document.createElement('button');
-                    botonEliminar.textContent = 'Eliminar';
+                    botonEliminar.textContent = 'Quitar';
                     botonEliminar.addEventListener('click', function () {
                         eliminarProductoDelCarrito(index);
                     });
