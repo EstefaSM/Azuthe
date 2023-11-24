@@ -62,6 +62,51 @@ nav a {
     text-decoration: none;
     color: black;
 }
+/* Aquí termina el Header */
+
+/* Aquí empieza el Main */
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 320px;
+}
+
+.productos img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.productos p {
+    line-height: 30px;
+    text-align: center;
+}
+
+.productos button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 /* Aquí empieza el Footer */
 
