@@ -5,6 +5,7 @@
     --subtitles: #8c34f4;
     --background: #ecdffb;
     --fondo: #f5daec;
+    --fondo2: #fad8ce;
 }
 
 * {
@@ -84,6 +85,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     background-image: url(IMG/fondo4);
     width: 50%;
 }
@@ -99,6 +101,24 @@ main {
     width: 300px;
     align-items: center;
 }
+
+.infoAzuthe2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    padding: 70px;
+    background-color: var(--fondo2);
+}
+
+.infoAzuthe2 p {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 65%;
+}
+
 
 /* Aquí empieza el Footer */
 
