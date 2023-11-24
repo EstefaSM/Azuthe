@@ -71,7 +71,12 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    padding: 15px;
+    padding-bottom: 50px;
+    background-color: var(--fondo);
+}
+
+main {
+    background-color: var(--fondo);
 }
 
 h2 {
@@ -88,6 +93,7 @@ h2 {
     border-radius: 15px;
     border: 1px solid black;
     width: 320px;
+    background-color: white;
 }
 
 .productos img {
