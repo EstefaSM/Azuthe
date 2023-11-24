@@ -3,6 +3,7 @@
     --blanco: white;
     --textColor: #d4fcfc;
     --subtitles: #8c34f4;
+    --men: #f7b39e;
     --background: #ecdffb;
     --fondo: #f5daec;
 }
@@ -50,11 +51,10 @@ nav ul li button {
     cursor: pointer;
     border-radius: 7px;
     transition: 0.4s;
-    background-color: #faceeb;
-    
+    background-color: #faceeb; 
 }
 
-button:hover{
+nav button:hover{
     background-color: #f583cf;
 }
 
@@ -63,6 +63,64 @@ nav a {
     color: black;
 }
 
+/* Aquí empieza el Main */
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+    background-color: #fad8ce;
+}
+
+main {
+    background-color: #fad8ce;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 320px;
+    background-color: white;
+}
+
+.productos img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.productos p {
+    line-height: 30px;
+    text-align: center;
+}
+
+.productos button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.4s;
+    background-color: #fad8ce;
+}
+
+button:hover{
+    background-color: var(--men);
+}
 
 /* Aquí empieza el Footer */
 
