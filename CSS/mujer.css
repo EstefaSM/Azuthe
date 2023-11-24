@@ -81,7 +81,7 @@ main {
 
 h2 {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 .productos {
@@ -111,6 +111,16 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.4s;
+    background-color: #faceeb;
+}
+
+button:hover{
+    background-color: var(--fondo);
 }
 
 

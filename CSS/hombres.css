@@ -72,10 +72,12 @@ nav a {
     gap: 15px;
     padding-bottom: 50px;
     background-color: #fad8ce;
+    padding-top: 20px;
 }
 
 main {
     background-color: #fad8ce;
+    padding-top: 20px;
 }
 
 h2 {
@@ -89,6 +91,7 @@ h2 {
     flex-direction: column;
     gap: 15px;
     padding: 10px;
+    padding-top: 20px;
     border-radius: 15px;
     border: 1px solid black;
     width: 320px;
