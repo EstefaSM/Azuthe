@@ -1,0 +1,102 @@
+:root {
+    --negro: black;
+    --blanco: white;
+    --textColor: #d4fcfc;
+    --subtitles: #8c34f4;
+    --background: #ecdffb;
+    --fondo: #f5daec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 0.5px solid;
+    /* background-color: #faceeb; */
+}
+
+.logo {
+    height: 100px;
+    margin: 10px;
+}
+
+nav {
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none; 
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px; 
+    text-decoration: none;
+}
+
+nav ul li button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.4s;
+    background-color: #faceeb;
+    
+}
+
+button:hover{
+    background-color: #f583cf;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Aquí empieza el Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+}
+
+footer ul li {
+    display: inline;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.socialMedia img {
+    margin-right: 20px;
+}
+
+footer p {
+    color: white;
+}
