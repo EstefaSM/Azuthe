@@ -63,7 +63,56 @@ nav a {
     color: black;
 }
 
+/* Aquí empieza el Main */
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #d1e9a3;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2, p {
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faceeb;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px;
+    border-style: groove;
+}
+
+.form input, label {
+    line-height: 25px;
+}
+
+form input {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.4s;
+    background-color: #f8eef5; 
+}
+
+#bcontacto button:hover {
+    background-color: #f583cf;
+}
 
 /* Aquí empieza el Footer */
 
